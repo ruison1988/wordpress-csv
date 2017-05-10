@@ -24,7 +24,7 @@ define('DB_USER', $db["user"]);
 /** MySQL database password */
 define('DB_PASSWORD', $db["pass"]);
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('DB_HOST', $db["host"].':'.$db["port"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
