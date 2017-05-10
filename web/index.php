@@ -1,6 +1,6 @@
 <?php
-$db = $_ENV["DATABASE_URL"];
-print_r($db);
+$db = parse_url($_ENV["DATABASE_URL"]);
+echo 'DB_NAME:'. trim($db["path"],'/').'   DB_USER:'.$db["user"].'   DB_PASSWORD:'.$db["pass"].'  DB_HOST:'.$db["host"];
 exit();
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
