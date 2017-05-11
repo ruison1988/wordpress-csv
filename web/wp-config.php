@@ -16,6 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+if($_SERVER['REMOTE_ADDR'] == '127.0.0.1') $_ENV['DATABASE_URL'] = "postgres://postgres:root@localhost:5432/wordpress-csv";
 $db = parse_url($_ENV["DATABASE_URL"]);
 /** The name of the database for WordPress */
 define('DB_NAME', trim($db["path"],'/'));
