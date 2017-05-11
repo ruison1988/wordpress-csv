@@ -1,4 +1,12 @@
 <?php
+$dbopts = parse_url(getenv('DATABASE_URL'));
+$dbname = ltrim($dbopts["path"],'/');
+$dbconn = pg_connect("host={$dbopts["host"]} port={$dbopts["port"]} dbname={$dbname} user={$dbopts["user"]} password={$dbopts["pass"]}");
+ if($dbconn){
+   echo "the database is connected";
+}else{
+    echo "the databse isn't connected";
+}exit();
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
  * wp-blog-header.php which does and tells WordPress to load the theme.
