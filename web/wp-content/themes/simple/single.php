@@ -9,7 +9,7 @@
 				<!-- 访问量 ...-->
 				<div class="secTitleBar">
 					<ul>
-						<li>分类：<?php the_category(’, ‘) ?></li>
+						<li>分类：<?php the_category(', ') ?></li>
 						<li>发表：<?php echo get_the_time('Y-m-d') ?></li>
 						<li>围观(<?php if(function_exists('custom_the_views') ) custom_the_views($post->ID); ?>)</li>
 						<!-- 获得评论数函数默认是wordpress自带的 -->

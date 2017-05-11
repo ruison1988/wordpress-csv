@@ -34,7 +34,7 @@
 							<li><i class="fa fa-calendar"></i><?php echo timeago( get_gmt_from_date(get_the_time('Y-m-d G:i:s')) ) ?></li>
 							<li><i class="fa fa-eye"></i><?php if(function_exists('the_views')) { the_views(); } ?>次浏览</li>
 							<li><a href=""><i class="fa fa-folder-o"></i>
-							<?php the_category(’, ‘) ?></a></li>
+							<?php the_category(', ') ?></a></li>
 						</ul>
 						<a href="<?php the_permalink();?>" class="btn btn-readmore btn-info btn-md">阅读更多</a>
 					</div>

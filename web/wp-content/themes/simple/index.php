@@ -28,7 +28,7 @@
 						<ul class="articleStatu">
 							<li><i class="fa fa-calendar"></i><?php echo get_the_time('Y-m-d') ?></li>
 							<li><i class="fa fa-eye"></i><?php if(function_exists('custom_the_views') ) custom_the_views($post->ID); ?>次浏览</li>
-							<li><a href=""><i class="fa fa-folder-o"></i><?php the_category(’, ‘) ?></a></li>
+							<li><a href=""><i class="fa fa-folder-o"></i><?php the_category(', ') ?></a></li>
 						</ul>
 						<a href="<?php the_permalink();?>" class="btn btn-readmore btn-info btn-md">阅读更多</a>
 					</div>
