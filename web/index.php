@@ -1,5 +1,5 @@
 <?php
-$dbopts = parse_url(getenv('DATABASE_URL'));
+$dbopts = parse_url($_ENV["DATABASE_URL"]);
 $dbname = ltrim($dbopts["path"],'/');
 $dbconn = pg_connect("host={$dbopts["host"]} port={$dbopts["port"]} dbname={$dbname} user={$dbopts["user"]} password={$dbopts["pass"]}");
  if($dbconn){
