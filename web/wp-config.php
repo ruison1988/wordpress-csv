@@ -13,7 +13,6 @@
  *
  * @package WordPress
  */
-print_r($_SERVER);exit();
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 if($_SERVER['REMOTE_ADDR'] == '127.0.0.1') $_ENV['DATABASE_URL'] = "postgres://postgres:root@localhost:5432/wordpress-csv";
