@@ -1,5 +1,6 @@
 <?php
 $db = parse_url($_ENV["DATABASE_URL"]);
+echo $_ENV["DATABASE_URL"].'                       ';
 print_r($db);exit();
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
