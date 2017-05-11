@@ -1,4 +1,5 @@
 <?php
+echo 'AAAAAAAAAAAAAAA';
 postgres://postgres:root@localhost:5432/wordpress-csv
 $dbopts = parse_url(getenv('DATABASE_URL'));
 $dbname = ltrim($dbopts["path"],'/');
