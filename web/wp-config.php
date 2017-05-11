@@ -13,7 +13,7 @@
  *
  * @package WordPress
  */
-
+print_r($_SERVER);exit();
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 $db = parse_url($_ENV["DATABASE_URL"]);
